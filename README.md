@@ -1,2 +1,2 @@
-<img src="assets/hello-world.png" alt="Portada" width="600">
+![Portada](assets/hello-world.png)
 
