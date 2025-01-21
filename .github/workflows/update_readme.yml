@@ -11,4 +11,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Update README with recent activity
-        uses: Sisuca/Sisuca@main
+        uses: Readme-Workflows/recent-activity@v2.4.1
+        with:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
