@@ -1,0 +1,19 @@
+name: Test Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Crear un archivo temporal
+        run: echo "Este es un archivo de prueba creado por GitHub Actions." > archivo_de_prueba.txt
+
+      - name: Imprimir el contenido del archivo
+        run: cat archivo_de_prueba.txt
