@@ -13,7 +13,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Actualizar el README
-        run: echo "Última actualización realizada por GitHub Actions: $(date)" >> README.md
+        run: |
+          echo "Última actualización realizada por GitHub Actions: $(date)" >> README.md
 
       - name: Mostrar contenido del README actualizado
         run: cat README.md
