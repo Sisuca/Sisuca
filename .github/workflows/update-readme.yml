@@ -12,8 +12,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Crear un archivo temporal
-        run: echo "Este es un archivo de prueba creado por GitHub Actions." > archivo_de_prueba.txt
+      - name: Actualizar el README
+        run: echo "Última actualización realizada por GitHub Actions: $(date)" >> README.md
 
-      - name: Imprimir el contenido del archivo
-        run: cat archivo_de_prueba.txt
+      - name: Mostrar contenido del README actualizado
+        run: cat README.md
